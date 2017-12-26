@@ -1,0 +1,12 @@
+{
+    "cmd": ["fpc", "${file_path}/${file_base_name}"],
+    "selector": "source.pascal",
+    "variants": [
+        {
+            "cmd": [ "gnome-terminal -e 'bash -c \"chmod a+rwx $file_base_name; ./$file_base_name;echo; echo Press Enter to exit...;read;\"'",],
+            "name": "Run",
+            "shell": true
+        }
+    ]
+}
+
